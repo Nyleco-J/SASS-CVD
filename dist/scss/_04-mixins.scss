@@ -1,0 +1,11 @@
+@mixin mediaQuery($width: 48rem){
+    @media screen and (min-width:$width){
+        @content;
+    }
+}
+
+@mixin grid($cols:1rem, $gap:1rem){
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}

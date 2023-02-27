@@ -1,0 +1,182 @@
+// //BANNER
+.banner{
+    background:$clr-light;
+    padding: 5rem 0;
+    padding-top: 11rem;
+    &_wrapper{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        .banner_text a{
+            padding: 1.2rem 1.5rem;
+            border-radius: 5rem;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            border: 1px solid transparent !important;
+            background: #ffa700;
+            text-decoration: none;
+            color: #ffffff;
+            text-align: center;
+        }
+        a:hover{
+            background-color: #2b2b2b;
+            border: 1px solid #ffa700;
+       }
+        p{
+            max-width: 40rem;
+            text-align: justify;
+            padding-bottom: 4rem;
+            
+        }
+        img{
+            width: 40rem;
+            padding-bottom: 2rem;
+        }
+        .banner_text h1{
+            padding-bottom: 2rem;
+            color: $clr-primary;
+            font-size: 4rem;
+            font-weight: 800;
+            max-width: 50rem;
+            line-height: 1.2;
+            text-align: center;
+        }
+    }
+    @include mediaQuery($break-lg){
+        .banner{
+            &_wrapper{
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                &_text{
+                    text-align: left;
+                }
+                .banner_text a{
+                    padding: 1.2rem 1.5rem;
+                    border-radius: 5rem;
+                    display: inline-block;
+                    border: 1px solid transparent;
+                    text-transform: uppercase;
+                    border: 1px solid transparent !important;
+                    background: #ffa700;
+                    text-decoration: none;
+                    color: #ffffff;
+                    margin-right: 40rem;
+                }
+                a:hover{
+                    background-color: #2b2b2b;
+                    border: 1px solid #ffa700;
+               }
+                p{
+                    max-width: 50rem;
+                    text-align: justify;
+                    margin: 3rem 0;
+                    font-size: 2rem;
+                    padding-bottom: 1rem;
+                }
+                h1{
+                    font-size: 9rem;
+                    font-weight: 800;
+                    max-width: 50rem;
+                    line-height: 1;
+                    color: #ffa700;
+                    text-align: left;
+                }
+                img{
+                    width: 70rem;
+                }
+            }
+        }
+             
+    }
+   
+}
+
+
+
+.hm-services{
+    background: #2b2b2b;
+    &_wrapper{
+        display: flex;
+        flex-direction: column;
+        // grid-template-columns: 1fr 1fr 1fr;
+    }
+    &_item{
+        text-align: center;
+        margin: 4rem 4rem;
+        p{
+            color: #ffffff;
+            margin: 2rem 0;
+            text-align: justify;
+        }
+        h4{
+            font-size: 2.5rem;
+            color: #ffa700;
+            font-weight: 600;
+        }
+        i{
+            font-size: 5rem;
+            color: #ffa700;
+             margin-bottom: 2rem;
+        }
+        a{
+            padding: 1.2rem 1.5rem;
+            border-radius: 5rem;
+            border: 1px solid transparent;
+            background: #ffa700;
+             color: #ffffff;
+             text-decoration: none;
+        }
+        a:hover{
+            background-color: #2b2b2b;
+            border: 1px solid #ffa700;
+       }
+       
+    }
+    @include mediaQuery($break-lg){
+        .hm-services{
+            padding: 2rem;
+            padding-bottom: 2rem;
+            &_wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            &_item{
+                text-align: center;
+                margin: 4rem 4rem;
+                p{
+                    color: #ffffff;
+                    margin: 2rem 0;
+                    text-align: justify;
+                }
+                h4{
+                    font-size: 2.5rem;
+                    color: #ffa700;
+                    font-weight: 600;
+                }
+                i{
+                    font-size: 5rem;
+                    color: #ffa700;
+                     margin-bottom: 2rem;
+                }
+                a{
+                    padding: 1.2rem 1.5rem;
+                    border-radius: 5rem;
+                    border: 1px solid transparent;
+                    background: #ffa700;
+                     color: #ffffff;
+                     text-decoration: none;
+                }
+                a:hover{
+                    background-color: #2b2b2b;
+                    border: 1px solid #ffa700;
+               }
+               
+            }
+            
+            
+        }
+    }
+    
+}
